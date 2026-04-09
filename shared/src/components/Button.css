@@ -1,0 +1,41 @@
+.shared-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shared-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.shared-btn--primary {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.shared-btn--primary:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.shared-btn--secondary {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.shared-btn--secondary:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
+.shared-btn--danger {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.shared-btn--danger:hover:not(:disabled) {
+  background-color: #dc2626;
+}

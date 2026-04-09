@@ -1,0 +1,18 @@
+{
+  "name": "mfe-ecommerce",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "shell",
+    "mfe-catalogo",
+    "mfe-carrinho",
+    "mfe-checkout"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run start --workspace=shared\" \"npm run start --workspace=mfe-catalogo\" \"npm run start --workspace=mfe-carrinho\" \"npm run start --workspace=mfe-checkout\" \"npm run start --workspace=shell\"",
+    "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
