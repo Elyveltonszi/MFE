@@ -1,0 +1,11 @@
+.shared-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+.shared-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
